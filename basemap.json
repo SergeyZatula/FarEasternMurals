@@ -25740,8 +25740,7 @@
           "filter": [
             "all",
             ["==", "admin_level", 4],
-            ["!=", "maritime", 1],
-            ["in", "name", "Хабаровский край"]
+            ["!=", "maritime", 1]
           ],
           "layout": {
             "visibility": "visible",
