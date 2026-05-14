@@ -25733,59 +25733,34 @@
             }
         },
         {
-            "id": "boundary-land-level-4",
-            "type": "line",
-            "source": "planet",
-            "source-layer": "boundary",
-            "minzoom": 2,
-            "filter": [
-                "all",
-                [
-                    "\u003e=",
-                    "admin_level",
-                    3
-                ],
-                [
-                    "\u003c=",
-                    "admin_level",
-                    8
-                ],
-                [
-                    "!=",
-                    "maritime",
-                    1
-                ]
+          "id": "boundary-dfo-subjects",
+          "type": "line",
+          "source": "planet",
+          "source-layer": "boundary",
+          "filter": [
+            "all",
+            ["==", "admin_level", 4],
+            ["!=", "maritime", 1]
+          ],
+          "layout": {
+            "visibility": "visible",
+            "line-cap": "round",
+            "line-join": "round"
+          },
+          "paint": {
+            "line-color": "#111111",
+            "line-width": [
+              "interpolate",
+              ["linear"],
+              ["zoom"],
+              2, 0.8,
+              6, 1.2,
+              10, 1.8,
+              14, 2.5,
+              18, 4
             ],
-            "layout": {
-                "line-join": "round",
-                "visibility": "none"
-            },
-            "paint": {
-                "line-color": "hsl(248, 8%, 64%)",
-                "line-dasharray": [
-                    3,
-                    1,
-                    1,
-                    1
-                ],
-                "line-width": {
-                    "base": 1.4,
-                    "stops": [
-                        [
-                            4,
-                            0.4
-                        ],
-                        [
-                            5,
-                            1
-                        ],
-                        [
-                            12,
-                            3
-                        ]
-                    ]
-                }
-            }
+            "line-opacity": 0.9
+          }
         },
         {
             "id": "boundary-land-level-2",
