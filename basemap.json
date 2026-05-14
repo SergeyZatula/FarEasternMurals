@@ -6,10 +6,10 @@
         "version": "v20260512"
     },
     "center": [
-        37.617417,
-        55.7505229
+        61.84586,
+        139.94014
     ],
-    "zoom": 12,
+    "zoom": 4,
     "light": {
         "anchor": "viewport",
         "color": "#ffffff",
