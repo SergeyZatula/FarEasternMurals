@@ -9,7 +9,7 @@
         139.94014,
         61.84586
     ],
-    "zoom": 4,
+    "zoom": 3,
     "light": {
         "anchor": "viewport",
         "color": "#ffffff",
@@ -30681,7 +30681,7 @@
             "type": "symbol",
             "source": "geodata",
             "source-layer": "place",
-            "minzoom": 5,
+            "minzoom": 3,
             "maxzoom": 13,
             "filter": [
                 "all",
