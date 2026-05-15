@@ -25738,7 +25738,7 @@
           "source": "planet",
           "source-layer": "boundary",
           "filter": [
-            "all",
+            "any",
             ["==", "admin_level", 4],
             ["!=", "maritime", 1],
             ["in", "name",
